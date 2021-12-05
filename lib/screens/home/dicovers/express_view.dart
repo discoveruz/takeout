@@ -47,7 +47,7 @@ class _ExpressPageState extends State<ExpressPage> {
           padding: EdgeInsets.zero,
         );
       },
-      future: Api('foods').getDocuments(),
+      future: Api('foods').getDocuments(true),
     );
   }
 

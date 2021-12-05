@@ -15,7 +15,7 @@ export 'package:takeout/screens/home/dicovers/express_view.dart';
 export 'package:takeout/models/food_model.dart';
 export 'package:takeout/constants/defaults.dart';
 export 'package:takeout/screens/home/orders/orders_page.dart';
-export 'package:takeout/screens/search/adress/curve_navbar.dart';
+export 'package:takeout/screens/search/adress/adress_search.dart';
 export 'package:takeout/screens/search/search_page.dart';
 export 'package:takeout/screens/main/main_page.dart';
 export 'package:takeout/screens/home/dicovers/nearby_page.dart';

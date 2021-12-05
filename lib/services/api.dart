@@ -23,21 +23,19 @@ class Api {
           .get();
       try {
         a.docs.forEach((e) {
-          print(e.data());
           foods.add(FoodData.fromJson(e.data() as Map<String, dynamic>));
         });
       } catch (e) {
-        print(e);
+        e.toString();
       }
     } else {
       QuerySnapshot data = await ref.get();
       try {
         data.docs.forEach((e) {
-          print(e.data());
           foods.add(FoodData.fromJson(e.data() as Map<String, dynamic>));
         });
       } catch (e) {
-        print(e);
+        e.toString();
       }
     }
 

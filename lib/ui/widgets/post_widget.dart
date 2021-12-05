@@ -145,19 +145,23 @@ class PostWidget extends StatelessWidget {
     "express": [
       Positioned(
         child: Ink(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(getWidth(10.0)),
+            color: kLightGrey,
+          ),
           width: getWidth(93.0),
           height: getHeight(60.0),
           child: Column(
             children: [
-              Spacer(flex: 11),
+              const Spacer(flex: 11),
               Text(
-                '3',
+                Random().nextInt(6).toString(),
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: getWidth(22.0),
                 ),
               ),
-              Spacer(flex: 8),
+              const Spacer(flex: 8),
               Text(
                 'Restaurants',
                 style: TextStyle(
@@ -165,7 +169,7 @@ class PostWidget extends StatelessWidget {
                   fontSize: getWidth(12.0),
                 ),
               ),
-              Spacer(flex: 11),
+              const Spacer(flex: 11),
             ],
           ),
         ),
@@ -227,7 +231,7 @@ class PostWidget extends StatelessWidget {
                 bottom: getHeight(19.5),
                 child: Text(
                   data.name!,
-                  style: TextStyle(color: kDeepGrey),
+                  style: const TextStyle(color: kDeepGrey),
                 ),
               ),
               Positioned(
