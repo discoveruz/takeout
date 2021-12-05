@@ -3,11 +3,11 @@ import 'constants/imports.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'SF Pro Display',
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(),
+      home:const MainPage(),
     );
   }
 }

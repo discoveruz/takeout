@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:takeout/constants/imports.dart';
+//Search page to'g'ri ishlashi uchun mahsulot nomini to'liq kiritish lozim
 
 class SearchPage extends StatefulWidget {
   SearchPage({Key? key}) : super(key: key);
