@@ -22,18 +22,18 @@ class Api {
           )
           .get();
       try {
-        a.docs.forEach((e) {
+        for (QueryDocumentSnapshot<Object?> e in a.docs) {
           foods.add(FoodData.fromJson(e.data() as Map<String, dynamic>));
-        });
+        }
       } catch (e) {
         e.toString();
       }
     } else {
       QuerySnapshot data = await ref.get();
       try {
-        data.docs.forEach((e) {
+        for (QueryDocumentSnapshot<Object?> e in data.docs) {
           foods.add(FoodData.fromJson(e.data() as Map<String, dynamic>));
-        });
+        }
       } catch (e) {
         e.toString();
       }
